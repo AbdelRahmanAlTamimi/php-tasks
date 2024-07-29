@@ -11,10 +11,10 @@ class Car {
        $this->model = $model;
        $this->VIN = $VIN;
     }
-    // function __destruct()
-    // {
-    //     echo "End of life of the car ^ <> ^ <br>";
-    // }
+    function __destruct()
+    {
+        echo "End of life of the car ^ <> ^ <br>";
+    }
 
     function setMake($make) {
         $this->make = $make;
