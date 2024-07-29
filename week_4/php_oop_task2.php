@@ -84,23 +84,15 @@ class Classroom
     }
 }
 
-$student1 = new Student("Alice", 20, "S001");
-$student2 = new Student("Bob", 22, "S002");
-$student3 = new Student("Charlie", 21, "S003");
-$student4 = new Student("David", 23, "S004");
-$student5 = new Student("Eve", 20, "S005");
-$student6 = new Student("Frank", 22, "S006");
-
-
 $classroom = new Classroom();
 
 
-$classroom->addStudent($student1);
-$classroom->addStudent($student2);
-$classroom->addStudent($student3);
-$classroom->addStudent($student4);
-$classroom->addStudent($student5);
-$classroom->addStudent($student6);
+$classroom->addStudent(new Student("Alice", 20, "S001"));
+$classroom->addStudent(new Student("Bob", 22, "S002"));
+$classroom->addStudent(new Student("Charlie", 21, "S003"));
+$classroom->addStudent(new Student("David", 23, "S004"));
+$classroom->addStudent(new Student("Eve", 20, "S005"));
+$classroom->addStudent(new Student("Frank", 22, "S006"));
 
 
 echo "<br>Listing all students:<br>";
